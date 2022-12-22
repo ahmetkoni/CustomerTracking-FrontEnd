@@ -1,0 +1,38 @@
+<div class="mb-3">
+    <label for="filterText" class="form-label"></label>
+    <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="arama">
+    <button class="btn btn-fill btn-dark" id="kanca" click="" routerLink="add">Add Session</button>
+    </div>
+    <div *ngIf="filterText">
+    </div>
+
+
+    <div id="table" style="overflow-x:auto;">
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="display: none;">Id</th>
+            <th>Customer Information</th>
+            <th>Participant</th>
+            <th>Session Subject</th>
+            <th>Session Result</th>
+            <th>Session Title</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let session of sessions">
+        <td style="display: none;">{{session.id}}</td>
+        <td>{{session.customerInfo}}</td>
+        <td>{{session.participant}}</td>
+        <td>{{session.sessionSubject}}</td>
+        <td>{{session.sessionResult}}</td>
+        <td>{{session.sessionTitle}}</td>
+        <td><button (click)="delete(session.id)" type="button" class="btn btn-dark">Delete</button></td>
+        <td> <button type="button " class="btn btn-dark" click="" routerLink="update/{{session.id}}">Update</button></td>
+    </tr>
+</tbody>
+</table>
+</div>

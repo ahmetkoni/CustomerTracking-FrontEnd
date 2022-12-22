@@ -1,0 +1,76 @@
+<div class="content">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h5 class="title">Add Investor</h5></div>
+        <div class="card-body">
+          <form [formGroup]="sessionAddForm">
+            <div class="mb-3">
+              <label for="customerInfo">Customer Information</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="customerInfo"
+                  formControlName="customerInfo"
+                  class="form-control"
+                  placeholder="Customer Information"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="participant">Participant</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="participant"
+                  formControlName="participant"
+                  class="form-control"
+                  placeholder="Participant"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="sessionSubject">Session Subject</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="sessionSubject"
+                  formControlName="sessionSubject"
+                  class="form-control"
+                  placeholder="Session Subject"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="sessionResult">Session Result</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="sessionResult"
+                  formControlName="sessionResult"
+                  class="form-control"
+                  placeholder="Session Result"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="sessionTitle">Session Title</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="sessionTitle"
+                  formControlName="sessionTitle"
+                  class="form-control"
+                  placeholder="Session Title"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-fill btn-dark" (click)="add()"  routerLink="session">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

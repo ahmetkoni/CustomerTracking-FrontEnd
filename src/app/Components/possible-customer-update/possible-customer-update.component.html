@@ -1,0 +1,137 @@
+<div class="content">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h5 class="title">Add Possible Customer</h5></div>
+        <div class="card-body">
+          <form [formGroup]="possibleCustomerUpdateForm" *ngIf="isFormReady">
+            <div class="mb-3">
+              <label for="productId">Product Id</label>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="productId"
+                  formControlName="productId"
+                  class="form-control"
+                  placeholder="Product Id"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerName">Possible Customer Name</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerName"
+                  formControlName="possibleCustomerName"
+                  class="form-control"
+                  placeholder="Possible Customer Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerLastName">Possible Customer Last Name</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerLastName"
+                  formControlName="possibleCustomerLastName"
+                  class="form-control"
+                  placeholder="Possible Customer Last Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerPhone">Possible Customer Phone</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerPhone"
+                  formControlName="possibleCustomerPhone"
+                  class="form-control"
+                  placeholder="Possible Customer Phone"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerEMail">Possible Customer EMail</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerEMail"
+                  formControlName="possibleCustomerEMail"
+                  class="form-control"
+                  placeholder="Possible Customer EMail"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerAddress">Possible Customer Address</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerAddress"
+                  formControlName="possibleCustomerAddress"
+                  class="form-control"
+                  placeholder="Possible Customer Address"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerCompany">Possible Customer Company</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerCompany"
+                  formControlName="possibleCustomerCompany"
+                  class="form-control"
+                  placeholder="Possible Customer Company"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerPosition">Possible Customer Position</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerPosition"
+                  formControlName="possibleCustomerPosition"
+                  class="form-control"
+                  placeholder="Possible Customer Position"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="possibleCustomerNote">Possible Customer Note</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="possibleCustomerNote"
+                  formControlName="possibleCustomerNote"
+                  class="form-control"
+                  placeholder="Possible Customer Note"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="customerDateTime">Customer Date Time</label>
+              <div class="form-group">
+                <input
+                  type="date"
+                  id="customerDateTime"
+                  formControlName="customerDateTime"
+                  class="form-control"
+                  placeholder="Customer Date Time"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-fill btn-dark" (click)="update(possibleCustomerUpdateForm)">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+

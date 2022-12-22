@@ -1,0 +1,61 @@
+<div class="mb-3">
+  <label for="filterText" class="form-label"></label>
+  <input
+    type="text"
+    [(ngModel)]="filterText"
+    class="form-control"
+    id="filterText"
+    placeholder="arama"
+  />
+</div>
+<button class="btn btn-fill btn-dark" id="kanca" click="" routerLink="add">
+  Add Customer
+</button>
+<div *ngIf="filterText">{{ filterText }} aradınız</div>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th style="display: none;">Id</th>
+        <th>Foreign Investor Name</th>
+        <th>Foreign Investor Last Name</th>
+        <th>Foreign Investor Phone Number</th>
+        <th>Foreign Investor EMail</th>
+        <th>Foreign Investor Address</th>
+        <th>Foreign Investor Company</th>
+        <th>Foreign Investor Position</th>
+        <th>Invest</th>
+        <th>Foreign Investor Note</th>
+        <th>Foreign Investor Country</th>
+        <th>Foreign Investor Date Time</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="
+          let foreignInvestor of foreignInvestors
+            | filterPipeForeign: filterText
+        "
+      >
+        <td style="display: none;">{{ foreignInvestor.id }}</td>
+        <td>{{ foreignInvestor.foreignInvestorName }}</td>
+        <td>{{ foreignInvestor.foreignInvestorLastName }}</td>
+        <td>{{ foreignInvestor.foreignInvestorPhoneNumber }}</td>
+        <td>{{ foreignInvestor.foreignInvestorEMail }}</td>
+        <td>{{ foreignInvestor.foreignInvestorAddress }}</td>
+        <td>{{ foreignInvestor.foreignInvestorCompany }}</td>
+        <td>{{ foreignInvestor.foreignInvestorPosition }}</td>
+        <td>{{ foreignInvestor.invest }}</td>
+        <td>{{ foreignInvestor.foreignInvestorNote }}</td>
+        <td>{{ foreignInvestor.foreignInvestorCountry }}</td>
+        <td>{{ foreignInvestor.foreignInvestorDateTime }}</td>
+        <td><button (click)="delete(foreignInvestor.id)" type="button" class="btn btn-dark">Delete</button></td>
+        <td> 
+          <button type="button " class="btn btn-dark" click="" routerLink="update/{{foreignInvestor.id}}">Update</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

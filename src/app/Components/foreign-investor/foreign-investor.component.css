@@ -1,0 +1,19 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgb(20, 17, 17);
+}
+
+thead{
+    background: #99b1b8;
+}
+
+th td{
+    text-align: left;
+    padding: 16px;
+}
+
+button{
+    background-color: #301748;
+}

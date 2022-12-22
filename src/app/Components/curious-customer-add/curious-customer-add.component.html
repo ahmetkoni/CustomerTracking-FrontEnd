@@ -1,0 +1,128 @@
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header"><h5 class="title">Add Curious Customer</h5></div>
+      <div class="card-body">
+        <form [formGroup]="curiousCustomerAddForm">
+          <div class="row">
+          <div class="mb-3 col-md-2">
+            <label for="productId">Product Id</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="productId"
+                formControlName="productId"
+                class="form-control"
+                placeholder="Product Id"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-3">
+            <label for="curiousCustomerName">Curious Customer Name</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerName"
+                formControlName="curiousCustomerName"
+                class="form-control"
+                placeholder="Curious Customer Name"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-3">
+            <label for="curiousCustomerLastName">Curious Customer Last Name</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerLastName"
+                formControlName="curiousCustomerLastName"
+                class="form-control"
+                placeholder="Curious Customer Last Name"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-4">
+            <label for="curiousCustomerPhoneNumber">Curious Customer Phone Number</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerPhoneNumber"
+                formControlName="curiousCustomerPhoneNumber"
+                class="form-control"
+                placeholder="Curious Customer Phone Number"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-3">
+            <label for="curiousCustomerEMail">Curious Customer EMail</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerEMail"
+                formControlName="curiousCustomerEMail"
+                class="form-control"
+                placeholder="Curious Customer EMail"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="curiousCustomerAddress">Curious Customer Address</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerAddress"
+                formControlName="curiousCustomerAddress"
+                class="form-control"
+                placeholder="Curious Customer Address"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-3">
+            <label for="curiousCustomerCompany">Curious Customer Company</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerCompany"
+                formControlName="curiousCustomerCompany"
+                class="form-control"
+                placeholder="Curious Customer Company"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="curiousCustomerPosition">Curious Customer Position</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerPosition"
+                formControlName="curiousCustomerPosition"
+                class="form-control"
+                placeholder="Curious Customer Position"
+              />
+            </div>
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="curiousCustomerNote">Curious Customer Note</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="curiousCustomerNote"
+                formControlName="curiousCustomerNote"
+                class="form-control"
+                placeholder="Curious Customer Note"
+              />
+            </div>
+          </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-fill btn-dark" (click)="add()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

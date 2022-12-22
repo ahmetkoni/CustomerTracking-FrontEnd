@@ -1,0 +1,53 @@
+<div class="mb-3">
+  <label for="filterText" class="form-label"></label>
+  <input
+    type="text"
+    [(ngModel)]="filterText"
+    class="form-control"
+    id="filterText"
+    placeholder="arama"
+  />
+  <button class="btn btn-fill btn-dark" id="kanca" click="" routerLink="add">
+    Add Possible Customer
+  </button>
+</div>
+<div *ngIf="filterText"></div>
+
+<div id="table" style="overflow-x: auto">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="display: none">Id</th>
+        <th>Product Id</th>
+        <th>Possible Customer Name</th>
+        <th>Possible Customer Last Name</th>
+        <th>Possible Customer Phone</th>
+        <th>Possible Customer EMail</th>
+        <th>Possible Customer Address</th>
+        <th>Possible Customer Company</th>
+        <th>Possible Customer Position</th>
+        <th>Possible Customer Note</th>
+        <th>Possible Customer Date Time</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let possibleCustomer of possibleCustomers">
+        <td style="display: none">{{ possibleCustomer.id }}</td>
+        <td>{{ possibleCustomer.productId }}</td>
+        <td>{{ possibleCustomer.possibleCustomerName }}</td>
+        <td>{{ possibleCustomer.possibleCustomerLastName }}</td>
+        <td>{{ possibleCustomer.possibleCustomerPhone }}</td>
+        <td>{{ possibleCustomer.possibleCustomerEMail }}</td>
+        <td>{{ possibleCustomer.possibleCustomerAddress }}</td>
+        <td>{{ possibleCustomer.possibleCustomerCompany }}</td>
+        <td>{{ possibleCustomer.possibleCustomerPosition }}</td>
+        <td>{{ possibleCustomer.possibleCustomerNote }}</td>
+        <td>{{ possibleCustomer.customerDateTime }}</td>
+        <td><button (click)="delete(possibleCustomer.id)" type="button" class="btn btn-dark">Delete</button></td>
+        <td> <button type="button " class="btn btn-dark" click="" routerLink="update/{{possibleCustomer.id}}">Update</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

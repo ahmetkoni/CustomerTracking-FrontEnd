@@ -1,0 +1,44 @@
+<div class="mb-3">
+    <label for="filterText" class="form-label"></label>
+    <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="arama">
+    <button class="btn btn-fill btn-dark" id="kanca" click="" routerLink="add">Add Routine Service</button>
+    </div>
+    <div *ngIf="filterText">
+    </div>
+
+
+    <div id="table" style="overflow-x:auto;">
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="display: none;">Id</th>
+            <th>Product Name</th>
+            <th>Product Id</th>
+            <th>Customer Name</th>
+            <th>Customer Id</th>
+            <th>Routine Service Description</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Employee</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let routineService of routineServices">
+        <td style="display: none;">{{routineService.id}}</td>
+        <td>{{routineService.productName}}</td>
+        <td>{{routineService.productId}}</td>
+        <td>{{routineService.customerName}}</td>
+        <td>{{routineService.customerId}}</td>
+        <td>{{routineService.routineServiceDescription}}</td>
+        <td>{{routineService.date}}</td>
+        <td>{{routineService.time}}</td>
+        <td>{{routineService.employee}}</td>
+        <td><button (click)="delete(routineService.id)" type="button" class="btn btn-dark">Delete</button></td>
+        <td> <button type="button " class="btn btn-dark" click="" routerLink="update/{{routineService.id}}">Update</button></td>
+    </tr>
+</tbody>
+</table>
+</div>

@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+.row{
+    background: #f1f5f9 ;
+    height: 100vh;
+}
+
+
+ /* #main-body{
+    position: absolute;
+    height: 100%; 
+    width: calc(100%-78px);
+    left: 78px;
+    transition: all 0.5s ease;
+} */
+/* #sidebar-left{
+ position: absolute;
+ height: 100%;
+ width: 78px;
+ left: 78px;
+} */
+
+/* .sidebar.active ~ #sidebar-left{
+    position: relative;
+    height: 100%;
+    width: 270px; 
+    left: 270px;
+}
+
+.sidebar.active ~ #main-body{
+    position: relative;
+    height: 100%;
+    width: calc(100% - 270px); 
+    left: 270px;
+}  */
+
+/* .sidebar.active ~ #main-body{
+    position: absolute;
+    height: 100%;
+     width: calc(100%-270px); 
+    left: 270px;
+} */

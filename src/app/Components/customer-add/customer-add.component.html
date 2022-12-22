@@ -1,0 +1,182 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header"><h5 class="title">Add Customer</h5></div>
+      <div class="card-body">
+        <form [formGroup]="customerAddForm">
+          <div class="mb-3">
+            <label for="managerName">Manager Name</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="companyName"
+                formControlName="companyName"
+                class="form-control"
+                placeholder="Company Name"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="companyAddress">Company Address</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="companyAddress"
+                formControlName="companyAddress"
+                class="form-control"
+                placeholder="Company Address"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="companyWebAddress">Company Web Address</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="companyWebAddress"
+                formControlName="companyWebAddress"
+                class="form-control"
+                placeholder="Company Web Address"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="managerName">Manager Name</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="managerName"
+                formControlName="managerName"
+                class="form-control"
+                placeholder="Manager Name"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="managerPhone">Manager Phone</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="managerPhone"
+                formControlName="managerPhone"
+                class="form-control"
+                placeholder="Manager Phone"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="managerEMail">Manager EMail</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="managerEMail"
+                formControlName="managerEMail"
+                class="form-control"
+                placeholder="Manager EMail"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="companyWorkSpace">Company Work Space</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="companyWorkSpace"
+                formControlName="companyWorkSpace"
+                class="form-control"
+                placeholder="Company Work Space"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="productId">ProductId</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="productId"
+                formControlName="productId"
+                class="form-control"
+                placeholder="ProductId"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="buyProductDate">Buy Product Date</label>
+            <div class="form-group">
+              <input
+                type="date"
+                id="buyProductDate"
+                formControlName="buyProductDate"
+                class="form-control"
+                placeholder="Buy Product Date"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="licenseTime">License Time</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="licenseTime"
+                formControlName="licenseTime"
+                class="form-control"
+                placeholder="License Time"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="endProductDate">End Product Date</label>
+            <div class="form-group">
+              <input
+                type="date"
+                id="endProductDate"
+                formControlName="endProductDate"
+                class="form-control"
+                placeholder="End Product Date"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="price">Price</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="price"
+                formControlName="price"
+                class="form-control"
+                placeholder="Price"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="note">Note</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="note"
+                formControlName="note"
+                class="form-control"
+                placeholder="Note"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="version">Version</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="version"
+                formControlName="version"
+                class="form-control"
+                placeholder="Version"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-fill btn-dark" (click)="add()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

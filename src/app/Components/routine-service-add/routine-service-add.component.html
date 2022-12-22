@@ -1,0 +1,110 @@
+<div class="content">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h5 class="title">Add Investor</h5></div>
+        <div class="card-body">
+          <form [formGroup]="routineServiceAddForm">
+            <div class="mb-3">
+              <label for="productId">Product Id</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="productName"
+                  formControlName="productName"
+                  class="form-control"
+                  placeholder="Product Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="productId">Product Id</label>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="productId"
+                  formControlName="productId"
+                  class="form-control"
+                  placeholder="Product Id"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="customerName">Customer Name</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="customerName"
+                  formControlName="customerName"
+                  class="form-control"
+                  placeholder="Customer Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="customerId">Customer Id</label>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="customerId"
+                  formControlName="customerId"
+                  class="form-control"
+                  placeholder="Customer Id"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="routineServiceDescription">Routine Service Description</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="routineServiceDescription"
+                  formControlName="routineServiceDescription"
+                  class="form-control"
+                  placeholder="Routine Service Description"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="date">Date</label>
+                <div class="form-group">
+                  <input
+                    type="date"
+                    id="date"
+                    formControlName="date"
+                    class="form-control"
+                    placeholder="Date"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="time">Time</label>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    id="time"
+                    formControlName="time"
+                    class="form-control"
+                    placeholder="Time"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="employee">Employee</label>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="employee"
+                    formControlName="employee"
+                    class="form-control"
+                    placeholder="Employee"
+                  />
+                </div>
+              </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-fill btn-dark" (click)="add()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>

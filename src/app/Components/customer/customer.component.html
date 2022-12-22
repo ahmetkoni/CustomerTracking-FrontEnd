@@ -1,0 +1,61 @@
+<div class="mb-3">
+<label for="filterText" class="form-label"></label>
+<input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="arama">
+<button class="btn btn-fill btn-dark" id="kanca" click="" routerLink="add">Add Customer</button>
+
+</div>
+
+<div *ngIf="filterText">
+{{filterText}} aradınız
+</div>
+<div class="table-responsive">
+    <!-- <div id="table" style="overflow-x:auto;"> -->
+<table  class="table table-hover">
+    <thead>
+        <tr>
+            <th style="display: none;">Id</th>
+            <th>Company Name</th>
+            <th>Company Address</th>
+            <th>Company Web Address</th>
+            <th>Manager Name</th>
+            <th>Manager Phone</th>
+            <th>Manager EMail</th>
+            <th>Compnay Work Space</th>
+            <th>Product Id</th>
+            <th>Buy Product Date</th>
+            <th>License Time</th>
+            <th>End Product Date</th>
+            <th>Price</th>
+            <th>Note</th>
+            <th>Version</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let customer of customers | filterPipe:filterText">
+        <td style="display: none;">{{customer.id}}</td>
+        <td>{{customer.companyName}}</td>
+        <td>{{customer.companyAddress}}</td>
+        <td>{{customer.companyWebAddress}}</td>
+        <td>{{customer.managerName}}</td>
+        <td>{{customer.managerPhone}}</td>
+        <td>{{customer.managerEMail}}</td>
+        <td>{{customer.companyWorkSpace}}</td>
+        <td>{{customer.productId}}</td>
+        <td>{{customer.buyProductDate}}</td>
+        <td>{{customer.licenseTime}}</td>
+        <td>{{customer.endProductDate}}</td>
+        <td>{{customer.price}}</td>
+        <td>{{customer.note}}</td>
+        <td>{{customer.version}}</td>
+        <td>
+            <button (click)="delete(customer.id)" type="button" class="btn btn-dark">Delete</button>
+            
+        </td>
+        <td> 
+            <button type="button " class="btn btn-dark" click="" routerLink="update/{{customer.id}}">Update</button></td>
+    </tr>
+</tbody>
+</table>
+</div>

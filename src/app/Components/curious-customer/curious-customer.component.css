@@ -1,0 +1,33 @@
+
+/* th{
+    padding-left: 20px ;
+}
+td{
+    padding-left:20px ;
+} */
+
+.label .form-label{
+    border-radius: 6px;
+    border-color: rgb(217, 205, 227);
+    border-width: 10px;
+}
+table{
+    position: relative;
+    right: 6px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgb(20, 17, 17);
+}
+thead{
+    background-color: #3a2d62;
+}
+button{
+    background-color: #5d2668;
+}
+
+th td{
+    text-align: left;
+    padding: 16px;
+}
+tr:nth-child(even){background-color: #f2f2f2}

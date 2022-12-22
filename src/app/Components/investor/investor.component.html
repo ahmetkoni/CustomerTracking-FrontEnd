@@ -1,0 +1,47 @@
+<div class="mb-3">
+    <label for="filterText" class="form-label"></label>
+    <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="arama">
+    <button class="btn btn-fill btn-dark" id="kanca" click="" routerLink="add">Add Investor</button>
+    </div>
+    <div *ngIf="filterText">
+    </div>
+
+
+    <div id="table" style="overflow-x:auto;">
+<table class="table">
+    <thead>
+        <tr>
+            <th style="display: none;">Id</th>
+            <th>Investor Name</th>
+            <th>Investor Last Name</th>
+            <th>Investor Phone Number</th>
+            <th>Investor EMail</th>
+            <th>Investor Address</th>
+            <th>Investor Company</th>
+            <th>Investor Position</th>
+            <th>Invest</th>
+            <th>Investor Note</th>
+            <th>Investor Date Time</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let investor of investors">
+        <td style="display: none;">{{investor.id}}</td>
+        <td>{{investor.investorName}}</td>
+        <td>{{investor.investorLastName}}</td>
+        <td>{{investor.investorPhoneNumber}}</td>
+        <td>{{investor.investorEMail}}</td>
+        <td>{{investor.investorAddress}}</td>
+        <td>{{investor.investorCompany}}</td>
+        <td>{{investor.investorPosition}}</td>
+        <td>{{investor.invest}}</td>
+        <td>{{investor.investorNote}}</td>
+        <td>{{investor.investorDateTime}}</td>
+        <td><button (click)="delete(investor.id)" type="button" class="btn btn-dark">Delete</button></td>
+        <td> <button type="button " class="btn btn-dark" click="" routerLink="update/{{investor.id}}">Update</button></td>
+    </tr>
+    </tbody>
+</table>
+</div>

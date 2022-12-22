@@ -1,0 +1,52 @@
+/* .label .form-label{
+    border-radius: 6px;
+    border-color: rgb(217, 205, 227);
+    border-width: 10px;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgb(134, 23, 23);
+}
+
+th td{
+    text-align: left;
+    padding: 16px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+
+.form-control{
+    position: relative;
+    left: 80px;
+    float: left;
+}
+
+#kanca{
+
+    position: relative;
+    bottom: 37px;
+    float: left;
+}
+
+ */
+
+ table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgb(20, 17, 17);
+}
+
+thead{
+    background: #99b1b8;
+}
+
+th td{
+    text-align: left;
+    padding: 16px;
+}
+
+button{
+    background-color: #301748;
+}

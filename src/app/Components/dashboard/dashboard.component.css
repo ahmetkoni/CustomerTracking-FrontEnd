@@ -1,0 +1,70 @@
+#main{
+    width:500px;
+    height: 500px;
+
+   
+}
+
+.cardBox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 2rem; */
+}
+
+.card {
+    position: relative;
+    background: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 17px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(rgb(170, 96, 170), #3e0964b4);
+
+}
+
+.customer{
+    position: relative;
+    font-weight: 330;
+    font-size: 1.25cm;
+    color: #01060a;
+}
+
+.bi.bi-currency-dollar{
+ font-size: 20px;
+}
+
+.cardcustomer{
+    background: linear-gradient(rgb(172, 96, 176),rgb(193, 155, 86));
+}
+
+.cardBox .card:hover{
+    background: #868389;
+}
+
+.cardBox .card:hover .customer{
+    color: white;
+}
+
+.investor{
+    position: relative;
+    font-weight: 330;
+    font-size: 1.25cm;
+    color: #01060a;
+}
+
+.cardBox .card:hover .investor{
+    color: white;
+}

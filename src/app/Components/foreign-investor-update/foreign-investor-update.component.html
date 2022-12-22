@@ -1,0 +1,148 @@
+<div class="content">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h5 class="title">Add Foreign Investor</h5></div>
+        <div class="card-body">
+          <form [formGroup]="foreignInvestorUpdateForm" *ngIf="isFormReady">
+            <div class="mb-3">
+              <label for="foreignInvestorName">Foreign Investor Name</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorName"
+                  formControlName="foreignInvestorName"
+                  class="form-control"
+                  placeholder="Foreign Investor Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorLastName">Foreign Investor Last Name</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorLastName"
+                  formControlName="foreignInvestorLastName"
+                  class="form-control"
+                  placeholder="Foreign Investor Last Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorPhoneNumber">Foreign Investor Phone Number</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorPhoneNumber"
+                  formControlName="foreignInvestorPhoneNumber"
+                  class="form-control"
+                  placeholder="Foreign Investor Phone Number"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorEMail">Foreign Investor EMail</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorEMail"
+                  formControlName="foreignInvestorEMail"
+                  class="form-control"
+                  placeholder="Foreign Investor EMail"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorAddress">Foreign Investor Address"</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorAddress"
+                  formControlName="foreignInvestorAddress"
+                  class="form-control"
+                  placeholder="Foreign Investor Address"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorCompany">Foreign Investor Company</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorCompany"
+                  formControlName="foreignInvestorCompany"
+                  class="form-control"
+                  placeholder="Foreign Investor Company"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorPosition">Foreign Investor Position</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorPosition"
+                  formControlName="foreignInvestorPosition"
+                  class="form-control"
+                  placeholder="Foreign Investor Position"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="invest">Invest</label>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="invest"
+                  formControlName="invest"
+                  class="form-control"
+                  placeholder="Invest"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorNote">Foreign Investor Note</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorNote"
+                  formControlName="foreignInvestorNote"
+                  class="form-control"
+                  placeholder="Foreign Investor Note"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorCountry">Foreign Investor Country</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="foreignInvestorCountry"
+                  formControlName="foreignInvestorCountry"
+                  class="form-control"
+                  placeholder="Foreign Investor Country"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="foreignInvestorDateTime">Foreign Investor Date Time</label>
+              <div class="form-group">
+                <input
+                  type="date"
+                  id="foreignInvestorDateTime"
+                  formControlName="foreignInvestorDateTime"
+                  class="form-control"
+                  placeholder="Foreign Investor Date Time"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-fill btn-dark" (click)="update(foreignInvestorUpdateForm)">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

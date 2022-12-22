@@ -1,0 +1,136 @@
+<div class="content">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h5 class="title">Add Investor</h5></div>
+        <div class="card-body">
+          <form [formGroup]="investorUpdateForm" *ngIf="isFormReady">
+            <div class="mb-3">
+              <label for="investorName">Investor Name</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorName"
+                  formControlName="investorName"
+                  class="form-control"
+                  placeholder="Investor Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorLastName">Investor Last Name</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorLastName"
+                  formControlName="investorLastName"
+                  class="form-control"
+                  placeholder="Investor Last Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorPhoneNumber">Investor Phone Number</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorPhoneNumber"
+                  formControlName="investorPhoneNumber"
+                  class="form-control"
+                  placeholder="Investor Phone Number"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorEMail">Investor EMail</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorEMail"
+                  formControlName="investorEMail"
+                  class="form-control"
+                  placeholder="Investor EMail"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorAddress">Investor Address</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorAddress"
+                  formControlName="investorAddress"
+                  class="form-control"
+                  placeholder="Investor Address"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorCompany">Investor Company</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorCompany"
+                  formControlName="investorCompany"
+                  class="form-control"
+                  placeholder="Investor Company"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorPosition">Investor Position</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorPosition"
+                  formControlName="investorPosition"
+                  class="form-control"
+                  placeholder="Investor Position"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="invest">Invest</label>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="invest"
+                  formControlName="invest"
+                  class="form-control"
+                  placeholder="Invest"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorNote">Investor Note</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="investorNote"
+                  formControlName="investorNote"
+                  class="form-control"
+                  placeholder="Investor Note"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="investorDateTime">Investor Date Time</label>
+              <div class="form-group">
+                <input
+                  type="date"
+                  id="investorDateTime"
+                  formControlName="investorDateTime"
+                  class="form-control"
+                  placeholder="Investor Date Time"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-fill btn-dark" (click)="update(investorUpdateForm)">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

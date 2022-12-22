@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">  
+      <div id="main" *ngIf="isChartReady == true"></div></div>
+    <div class="col-8">
+      <div class="cards" >
+        <div class="card">
+            <p class="customer">Customer</p>
+            <h3>{{  dashboardData }}</h3>
+          </div>
+          <div class="card">
+            <i class="bi bi-currency-dollar"></i>
+            <p class="investor">Investor</p>
+            <h3>{{ investData }}</h3>
+          </div>
+          <div class="card">
+            <p class="investor">Foreign Investor</p>
+            <h3>{{ foreignInvestData }}</h3>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

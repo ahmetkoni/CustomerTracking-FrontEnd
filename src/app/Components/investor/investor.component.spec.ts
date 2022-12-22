@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { InvestorComponent } from './investor.component';
+
+describe('InvestorComponent', () => {
+  let component: InvestorComponent;
+  let fixture: ComponentFixture<InvestorComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ InvestorComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(InvestorComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
